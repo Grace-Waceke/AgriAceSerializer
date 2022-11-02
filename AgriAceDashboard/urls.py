@@ -19,7 +19,6 @@ from django.urls import path
 from dashboard import views
 
 urlpatterns = [
-    path('', views.say_hello),
     path('admin/', admin.site.urls),
     path('index', views.index, name='index'),
     path('api/customers/login', views.CustomerLoginView.as_view(), name="login"),
